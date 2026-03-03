@@ -5,10 +5,11 @@ import im3 from "../images/im3.jpg";
 import im4 from "../images/im4.jpg";
 import im5 from "../images/im5.jpg";
 
+const images = [im1, im2, im3, im4, im5];
+
 export default function Slider() {
-  const images = [im1, im2, im3, im4, im5];
   const [index, setIndex] = useState(0);
-  
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const timer = setInterval(() => {
