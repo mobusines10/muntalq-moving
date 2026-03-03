@@ -8,7 +8,8 @@ import im5 from "../images/im5.jpg";
 export default function Slider() {
   const images = [im1, im2, im3, im4, im5];
   const [index, setIndex] = useState(0);
-
+  
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((i) => (i + 1) % images.length);
