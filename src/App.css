@@ -1,0 +1,233 @@
+/* ===== Body ===== */
+body {  
+  margin: 0;  
+  background: #e0f0f7; /* أزرق فاتح مريح للعين */  
+  font-family: "Cairo", "Segoe UI", Arial, sans-serif;  
+  text-align: center;  
+  direction: rtl;
+}
+
+/* ===== Header ===== */
+.header {  
+  background: #0b3c5d;  
+  color: white;  
+  padding: 25px;
+}
+.header-content {  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  gap: 20px;  
+  flex-wrap: wrap;
+}
+.flag-large {  
+  width: 120px;  
+  height: auto;  
+  border: 3px solid white;  
+  border-radius: 12px;  
+  transition: 0.3s;
+}
+.flag-large:hover {  
+  transform: scale(1.05);
+}
+
+/* ===== Slider ===== */
+.slider {  
+  width: 450px;  
+  height: 280px;  
+  margin: 25px auto;  
+  overflow: hidden;  
+  border-radius: 15px;  
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);  
+  position: relative;
+}
+.slider img {  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;  
+  animation: fade 1s ease-in-out;
+}
+@keyframes fade {  
+  from { opacity: 0; transform: scale(1.05); }  
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ===== Cards ===== */
+.card {  
+  background: white;  
+  margin: 20px auto;  
+  padding: 20px;  
+  width: 450px;  
+  border-radius: 12px;  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);  
+  text-align: right;  
+  font-size: 16px;  
+  transition: 0.3s;
+}
+.card:hover {  
+  transform: translateY(-5px);
+}
+/* ===== Services Section ===== */
+.services-section {
+  margin: 40px auto;
+  text-align: center; /* جعل العناوين والنصوص في الوسط */
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.services-section h2 {
+  font-size: 40px;
+  color: #0b3c5d; /* نفس لون Header/Footer */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center; /* منتصف الصفحة */
+}
+
+.service-card {
+  text-align: center; /* جعل كل شيء داخل الكارت في الوسط */
+  padding: 0;
+  box-shadow: none;
+}
+
+.service-card h3 {
+  font-size: 26px; /* عنوان كبير وواضح */
+  color: #0b3c5d;
+  font-weight: bold;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center; /* منتصف السطر */
+  align-items: center;
+}
+
+.service-card h3 svg {
+  margin-left: 8px; /* مسافة بسيطة بين الأيقونة والنص */
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+}
+/* ===== Call Button ===== */
+.call-float {  
+  position: fixed;  
+  bottom: 20px;  
+  left: 20px;  
+  width: 60px;  
+  height: 60px;  
+  border-radius: 50%;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  font-size: 28px;  
+  color: white;  
+  background: #007bff;  
+  text-decoration: none;  
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);  
+  z-index: 9999;  
+  transition: 0.3s;  
+}
+.call-float:hover {  
+  background: #1e7e34;  
+  transform: scale(1.1);  
+}
+
+/* ===== WhatsApp Button ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%; 
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column; /* الأيقونة فوق النص */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.whatsapp-float:hover {
+  background: #128c7e;
+  transform: scale(1.1);
+}
+
+.whatsapp-text {
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* ===== Map ===== */
+.map-container {  
+  width: 450px;  
+  margin: 20px auto;  
+  text-align: center;
+}
+.map-container h3 {  
+  margin-bottom: 10px;  
+  color: #0b3c5d;
+}
+.map-container iframe {  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);  
+  border-radius: 12px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0b3c5d;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.instagram-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.instagram-link:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {  
+  .slider, .card, .map-container { width: 90%; }
+}
+@media (max-width: 480px) {  
+  body { font-size: 14px; }  
+  .header-content { flex-direction: column; gap: 10px; text-align: center; }  
+  .flag-large { width: 80px; }  
+  .slider { height: 200px; }  
+  .card { padding: 15px; }  
+  .map-container iframe { height: 200px; }  
+  .call-float, .whatsapp-float { width: 50px; height: 50px; font-size: 24px; }
+}
